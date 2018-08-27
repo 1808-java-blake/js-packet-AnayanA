@@ -42,12 +42,11 @@ function reverseStr(someStr) {
 }
 
 function factorial(someNum) {
-    let fact = 1;
-     while (someNum > 1) {
-         fact *= someNum;
-         someNum--;
-     }
-    return fact
+    if(someNum === 1){
+        return 1;
+    } else {
+        return somenum*factorial(somenum-1);
+    }
 }
 
 
