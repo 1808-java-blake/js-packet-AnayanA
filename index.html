@@ -181,9 +181,9 @@
     
 
     function summed() {
-      console.log(sm.value);
+      console.log(parseInt(sm.value,10));
       console.log(sm2.value);
-      if ((parseInt(sm.value),10 != Number) || (parseInt(sm2.value,10) != Number)) {
+      if ((parseInt(sm.value,10) === NaN) || (parseInt(sm2.value,10) === NaN)) {
         document.getElementById('sum').innerHTML = "Cannot add";
       } else {
         document.getElementById('sum').innerHTML = parseInt(sm.value, 10) + parseInt(sm2.value, 10);
